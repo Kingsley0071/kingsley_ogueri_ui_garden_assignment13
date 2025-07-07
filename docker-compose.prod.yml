@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  kingsley_ogueri_ui_garden:
+    build:
+      context: .
+      dockerfile: Dockerfile.prod
+    image: kingsley_ogueri_ui_garden
+    ports:
+      - "8083:80"
+    container_name: kingsley_ogueri_ui_garden
+ 
