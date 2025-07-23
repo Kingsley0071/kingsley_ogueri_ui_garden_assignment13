@@ -5,16 +5,12 @@ import Card from './Card';
 
 describe('Card', () => {
   it('renders and is visible', () => {
-    const { getByText } = render(
-      <Card>Card Content</Card>
-    );
+    const { getByText } = render(<Card>Card Content</Card>);
     expect(getByText('Card Content')).toBeVisible();
   });
 
   it('renders children', () => {
-    const { getByText } = render(
-      <Card>Card Content</Card>
-    );
+    const { getByText } = render(<Card>Card Content</Card>);
     expect(getByText('Card Content')).toBeInTheDocument();
   });
 });

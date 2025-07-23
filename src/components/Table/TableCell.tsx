@@ -6,11 +6,7 @@ interface TableCellProps {
 }
 
 const TableCell: React.FC<TableCellProps> = ({ children, className }) => {
-  return (
-    <td className={className}>
-      {children}
-    </td>
-  );
+  return <td className={className}>{children}</td>;
 };
 
 export default TableCell;

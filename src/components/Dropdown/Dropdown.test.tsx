@@ -11,14 +11,14 @@ const options = [
 describe('Dropdown', () => {
   it('renders and is visible', () => {
     const { getByRole } = render(
-      <Dropdown options={options} value="" onChange={() => {}} />
+      <Dropdown options={options} value="" onChange={() => {}} />,
     );
     expect(getByRole('combobox')).toBeVisible();
   });
 
   it('is disabled when disabled prop is true', () => {
     const { getByRole } = render(
-      <Dropdown options={options} value="" onChange={() => {}} disabled />
+      <Dropdown options={options} value="" onChange={() => {}} disabled />,
     );
     expect(getByRole('combobox')).toBeDisabled();
   });

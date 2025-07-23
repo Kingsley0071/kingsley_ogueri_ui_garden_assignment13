@@ -26,7 +26,7 @@ describe('Table', () => {
             <TableCell>Footer</TableCell>
           </TableRow>
         </TableFooter>
-      </Table>
+      </Table>,
     );
     expect(getByRole('table')).toBeVisible();
   });

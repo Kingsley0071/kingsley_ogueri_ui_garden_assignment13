@@ -23,7 +23,8 @@
     "src/**/*",
     "src/**/*.test.ts",
     "src/**/*.test.tsx",
-    "src/setupTests.ts"
-, "babel.config.js"  ],
+    "src/setupTests.ts",
+    "babel.config.js"
+  ],
   "exclude": ["node_modules", "dist"]
 }

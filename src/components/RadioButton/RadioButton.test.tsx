@@ -6,14 +6,19 @@ import RadioButton from './RadioButton';
 describe('RadioButton', () => {
   it('renders and is visible', () => {
     const { getByLabelText } = render(
-      <RadioButton checked={false} onChange={() => {}} label="Radio" />
+      <RadioButton checked={false} onChange={() => {}} label="Radio" />,
     );
     expect(getByLabelText('Radio')).toBeVisible();
   });
 
   it('is disabled when disabled prop is true', () => {
     const { getByLabelText } = render(
-      <RadioButton checked={false} onChange={() => {}} label="Radio" disabled />
+      <RadioButton
+        checked={false}
+        onChange={() => {}}
+        label="Radio"
+        disabled
+      />,
     );
     expect(getByLabelText('Radio')).toBeDisabled();
   });

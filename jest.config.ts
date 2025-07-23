@@ -9,7 +9,7 @@ const config: Config = {
   transform: {
     '^.+\\.tsx?$': 'ts-jest',
     '^.+\\.[jt]sx?$': 'babel-jest', // add this line
-  }
+  },
 };
 
 export default config;

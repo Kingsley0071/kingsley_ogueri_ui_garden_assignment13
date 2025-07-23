@@ -1,7 +1,13 @@
 import React from 'react';
 import { RadioButtonProps } from './RadioButton.types';
 
-const RadioButton: React.FC<RadioButtonProps> = ({ checked, onChange, disabled, label, ...rest }) => (
+const RadioButton: React.FC<RadioButtonProps> = ({
+  checked,
+  onChange,
+  disabled,
+  label,
+  ...rest
+}) => (
   <label>
     <input
       type="radio"
