@@ -24,3 +24,13 @@ yarn-error.log*
 
 *storybook.log
 storybook-static
+
+# Docker
+docker-compose.override.yml
+*.local.yml
+
+# Husky
+.husky/_/*
+
+# VSCode
+.vscode/
