@@ -5,10 +5,11 @@ import TableRow from './TableRow';
 import TableCell from './TableCell';
 import TableFooter from './TableFooter';
 
-export default {
+const story = {
   title: 'Components/Table',
   component: Table,
 };
+export default story;
 
 export const Default = () => (
   <Table>

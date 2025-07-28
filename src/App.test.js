@@ -1,11 +1,8 @@
-import { render, screen } from '@testing-library/react';
-import App from './App.js';
+import { render } from '@testing-library/react';
+import App from './App';
 import React from 'react';
-// import ReactDOM from 'react-dom/client';
 import '@testing-library/jest-dom';
 
-test('renders learn react link', () => {
+test('renders without crashing', () => {
   render(<App />);
-  // const linkElement = screen.getByText(/learn react/i);
-  // expect(linkElement).toBeInTheDocument();
 });
