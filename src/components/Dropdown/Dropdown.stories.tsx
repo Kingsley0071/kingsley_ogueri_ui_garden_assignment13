@@ -14,10 +14,5 @@ const options = [
 ];
 
 export const Default = () => (
-  <Dropdown
-    options={options}
-    value=""
-    onChange={() => {}}
-    disabled={false}
-  />
+  <Dropdown options={options} value="" onChange={() => {}} disabled={false} />
 );
