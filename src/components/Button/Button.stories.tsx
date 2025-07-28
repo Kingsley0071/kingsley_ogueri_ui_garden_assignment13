@@ -2,10 +2,11 @@ import React from 'react';
 import { StoryFn } from '@storybook/react-webpack5';
 import Button from './Button';
 
-export default {
+const story = {
   title: 'Components/Button',
   component: Button,
 };
+export default story;
 
 const Template: StoryFn<typeof Button> = (args) => <Button {...args} />;
 

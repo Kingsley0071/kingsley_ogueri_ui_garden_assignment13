@@ -1,10 +1,11 @@
 import React from 'react';
 import HeroImage from './HeroImage';
 
-export default {
+const story = {
   title: 'Components/HeroImage',
   component: HeroImage,
 };
+export default story;
 
 export const Default = () => (
   <HeroImage src="https://via.placeholder.com/800x300" alt="Hero">

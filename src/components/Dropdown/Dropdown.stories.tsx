@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Dropdown from './Dropdown';
 
-export default {
+const story = {
   title: 'Components/Dropdown',
   component: Dropdown,
 };
+export default story;
 
 const options = [
   { value: '', label: 'Select...' },
@@ -12,14 +13,11 @@ const options = [
   { value: '2', label: 'Option 2' },
 ];
 
-export const Default = () => {
-  const [value, setValue] = useState('');
-  return (
-    <Dropdown
-      options={options}
-      value={value}
-      onChange={(e) => setValue(e.target.value)}
-      disabled={false}
-    />
-  );
-};
+export const Default = () => (
+  <Dropdown
+    options={options}
+    value=""
+    onChange={() => {}}
+    disabled={false}
+  />
+);

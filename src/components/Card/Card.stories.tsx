@@ -1,10 +1,11 @@
 import React from 'react';
 import Card from './Card';
 
-export default {
+const story = {
   title: 'Components/Card',
   component: Card,
 };
+export default story;
 
 export const Default = () => (
   <Card>

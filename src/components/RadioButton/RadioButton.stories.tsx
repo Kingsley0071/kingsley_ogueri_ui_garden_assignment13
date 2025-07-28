@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import RadioButton from './RadioButton';
 
-export default {
+const story = {
   title: 'Components/RadioButton',
   component: RadioButton,
 };
+export default story;
 
 export const Default = () => {
   const [checked, setChecked] = useState(false);
@@ -12,7 +13,7 @@ export const Default = () => {
     <RadioButton
       checked={checked}
       onChange={() => setChecked(!checked)}
-      label="Radio Button"
+      label="Radio"
       disabled={false}
     />
   );
